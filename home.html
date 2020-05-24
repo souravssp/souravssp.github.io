@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Bright Kid @Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700|Indie+Flower" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript">// <![CDATA[
+    function ShowHide(divId) {
+      if (document.getElementById(divId).style.display == 'none') {
+        document.getElementById(divId).style.display = 'block';
+      }
+      else {
+        document.getElementById(divId).style.display = 'none';
+      }
+    }
+// ]]></script>
+
+  <style>
+  	[data-slides] {
+    background-image: url('images/Cover3.jpg'); /* Default image. */
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    transition: background-image 1s linear;
+}
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+    .nav-item {
+      width: 50%;
+    }
+    .nav-tabs-link {
+      width: 100%;
+      display: inline-block;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 22px;
+      border-top-right-radius: 20px !important;
+      border-top-left-radius: 20px !important;
+      border-radius: 0;
+      border-width: 6px !important;
+      border-style: solid !important;
+      margin: 30px 0px 0px 0px;
+      background: #2fa5b2;
+      color: #fff !important;
+      border-color: #2596a2 !important;
+    }
+
+    .the-tab {
+      padding: 40px;
+    font-size: 20px;
+    background: #dc3545 !important;
+    color: #fff !important;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 6px solid #b32230 !important;
+    border-top-color: #dc3545 !important;
+    }
+
+    .active.nav-tabs-link {
+      background-color: #dc3545 !important;
+    border-color: #b32230 !important;
+    border-bottom-color: #dc3545 !important;
+    }
+
+.dropdown {
+  width: 1000px;
+      height: 50px;
+      margin: 0;
+      z-index: 99;
+      position: relative;
+}
+#nav {
+    position:relative;
+    width:100%;
+    margin-top:50px;
+    padding:10px;
+	height:60px;
+	margin-left:250px;
+}
+
+ul#navigation {
+    margin:0px auto;
+    position:relative;
+    float:left;
+    border-left:0px solid #fff;
+    border-right:1px solid #fff;
+}
+
+ul#navigation li {
+    display:inline;
+    font-size:12px;
+    font-weight:bold;
+    margin:0;
+    padding:0;
+    float:left;
+    position:relative;
+    border-top:1px solid #c4dbe7;
+    border-bottom:2px solid #c4dbe7;
+}
+
+ul#navigation li a {
+    padding:10px 25px;
+    color:#202329;
+    text-shadow:1px 1px 0px #fff;
+    text-decoration:none;
+    display:inline-block;
+    border-right:1px solid #fff;
+    border-left:1px solid #C2C2C2;
+    border-top:1px solid #fff;
+    background: #ffebeb;
+    box-sizing: border-box;
+    -webkit-transition:color 0.2s linear, background 0.2s linear;
+    -moz-transition:color 0.2s linear, background 0.2s linear;
+    -o-transition:color 0.2s linear, background 0.2s linear;
+    transition:color 0.2s linear, background 0.2s linear;
+}
+
+ul#navigation li a:hover {
+    background:#e3f0fc;
+    color:#282828;
+}
+
+ul#navigation li a.first {
+    border-left: 0 none;
+}
+
+ul#navigation li a.last {
+    border-right: 0 none;
+}
+
+ul#navigation li:hover > a {
+    background:#d5e7f7;
+}
+/* Drop-Down Navigation */
+ul#navigation li:hover > ul
+{
+/*these 2 styles are very important,
+being the ones which make the drop-down to appear on hover */
+    visibility:visible;
+    opacity:1;
+}
+
+ul#navigation ul, ul#navigation ul li ul {
+    list-style: none;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+/*the next 2 styles are very important,
+being the ones which make the drop-down to stay hidden */
+    visibility:hidden;
+    opacity:0;
+    position: absolute;
+    z-index: 99999;
+    width:180px;
+    background:#e3f0fc;
+    box-shadow:1px 1px 3px #ccc;
+/* css3 transitions for smooth hover effect */
+    -webkit-transition:opacity 0.2s linear, visibility 0.2s linear;
+    -moz-transition:opacity 0.2s linear, visibility 0.2s linear;
+    -o-transition:opacity 0.2s linear, visibility 0.2s linear;
+    transition:opacity 0.2s linear, visibility 0.2s linear;
+}
+
+ul#navigation ul {
+    top: 43px;
+    left: 1px;
+}
+
+ul#navigation ul li ul {
+    top: 0;
+    left: 181px; /* strong related to width:180px; from above */
+}
+
+ul#navigation ul li {
+    clear:both;
+    width:100%;
+    border:0 none;
+    border-bottom:1px solid #c9c9c9;
+}
+
+ul#navigation ul li a {
+    background:none;
+    padding:7px 15px;
+    box-sizing: border-box;
+    color:#202329;
+    text-shadow:1px 1px 0px #fff;
+    text-decoration:none;
+    display:inline-block;
+    border:0 none;
+    float:left;
+    clear:both;
+    width:150px;
+}
+    div.scrollmenu {
+      overflow: auto;
+      white-space: nowrap;
+    }
+
+/* Create two equal columns that floats next to each other */
+.col {
+  float: left;
+  width: 60%;
+  padding: 10px;
+  height: 500px; /* Should be removed. Only for demonstration */
+}
+.col1 {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  height: 500px; /* Should be removed. Only for demonstration */
+}
+.container {
+  width: 100%;
+  margin-left:150px;
+  margin-right:10px;
+  padding-right: 20px;
+    padding-left: 10px;
+}
+
+/* Clear floats after the columns */
+.ro1:after {
+  display: table;
+  clear: both;
+}
+#slideshow {
+  margin: 30px auto;
+  position: relative;
+  width: 600px;
+  height: 400px;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#slideshow > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 500px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #000;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 1000px;
+  padding: 10px;
+  background-color:#b6d65c;
+  border-radius:20px;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border-radius: 20px;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  margin-left:200px;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+  <div class="site-wrap" id="home-section">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+
+    <header class="site-navbar site-navbar-target" role="banner">
+
+      <div class="container mb-3">
+        <div class="d-flex align-items-center">
+          <div class="site-logo mr-auto">
+            <img src= "images\bkhl.png" alt="bkhl" width="240" height="120">
+
+          </div>
+          <div class="site-quick-contact d-none d-lg-flex ml-auto ">
+            <div class="d-flex site-info align-items-center mr-5">
+              <img src= "images\bkmhl.png" alt="bkhl" width="240" height="120" align="right">
+            </div>
+          </div>
+        </div>
+      </div>
+<nav id="nav">
+    <ul id="navigation">
+        <li><a href="home.html" class="first">Home</a></li>
+        <li><a href="curriculum.html">Curriculum & Level</a>
+        </li>
+        <li><a href="#">Learning Edge &raquo;</a>
+            <ul>
+                <li><a href="smart_learning_edge.html">Smart Learning Edge</a></li>
+                <li><a href="enchancing_social_skills.html">Enhancing scoial skills</a></li>
+                <li><a href="montessori_learning_edge.html">Montessori Learning Edge</a></li>
+				<li><a href="Mybrightbook.html">My Bright Books</a></li>
+            </ul>
+        </li>
+		<li><a href="https://brightkidmont.viewpage.co/bkhome">Support & Enquire</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="#">Enrollment</a></li>
+        <li><a href="#" class="last">Contact Us</a></li>
+    </ul>
+</nav>
+
+
+    </header>
+
+    <div class="ftco-blocks-cover-1">
+
+      <div class="site-section-cover overlay" data-slides='["images/Cover1.jpg", "images/Cover2.jpg", "images/Cover3.jpg", "images/Cover4.jpg"]'>
+      	<script>!function(t){"use strict";var a=t("[data-slides]"),s=a.data("slides"),e=s.length,n=function(){a.css("background-image",'url("'+s[Math.floor(Math.random()*e)]+'")').show(0,function(){setTimeout(n,5e3)})};n()}(jQuery);</script>
+<div class="container">
+		<div class="ro1" style="margin-top:250px;">
+<div class="col">
+
+              <h3 style="font-family:Amarnath;font-size:34px;color:#b1eb34;">Welcome to BrightKid@Home Program</h3>
+              <p style="color:#fff;">Welcome to Bright Kid @ Home program, a unique Early Childhood Preschool program at the safety and comfort of the home offered by Bright Kid Montessori House who has 13+ years of experience in operating preschools across the country
+                and has developed 25000+ children. Bright Kids are always a step ahead with Activity based Learning, a perfect early childhood "hands-on..minds on" pedagogy accredited by many prestigious awards. This award winning innovative curriculum
+                from Bright Kid Montessori House is now available at the comfort of your home for the children of ages 1.5 to 6 years involving Augmented Reality enabled book & Montessori kits (minimal screen time for children) and a highly evolved online
+                curriculum support program for the parents.</p>
+
+              <p class="mt-5"><a href="https://www.brightkidmont.com/contact.html"
+                  class="btn btn-primary btn-custom-1 mt-4">Enquire Now</a><a href="#"
+                  class="btn btn-warning btn-custom-1 mt-4" onclick="openForm()">List Of Awards</a><a href="#"
+                  class="btn btn-success btn-custom-1 mt-4">Watch Video</a></p>
+				  <div class="form-popup" id="myForm">
+  <form class="form-container">
+     <h4 class="modal__text" style="font-family:Amarnath;font-size:34px;color:#0b1590;">Latest Awards & Recognitions:-</h4>
+          <p class="modal__text"  style="font-family:Amarnath;"> <strong>1. </strong> The Best Education Brands 2018-2019 by the Economics Times.</p>
+          <p class="modal__text"  style="font-family:Amarnath;"> <strong>2. </strong> Digital Content of the Year 2018-19 in Early Learning:Winner of the prestigious IDA Corporate Award.</p>
+          <p class="modal__text" style="font-family:Amarnath;"> <strong>3. </strong> The 10 Best Preschools in India(2018) by the Knowledge Review Magazine.</p>
+          <p class="modal__text"  style="font-family:Amarnath;"> <strong>4. </strong> Times Eduaction Excellence 2018 in Best Preschool(Innovative Teaching)-Ranked #1.</p>
+          <p class="modal__text"  style="font-family:Amarnath;"> <strong>5. </strong>20 Most Promising Preschools & Daycares in Bangalore(2018) by the Silicon India Education Magazine.</p>
+          <p class="modal__text"  style="font-family:Amarnath;"> <strong>6. </strong>Times Education Excellence 2019 in Best Preschool(Innovative Teaching)-Ranked #1.</p>
+          <p class="modal__text"  style="font-family:Amarnath;"> <strong>7. </strong>IDA Corparate Award 2019 distinctive citation for Product/Solution/Service of the year in early learning.</p>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+</div>
+<div class="col1">
+       <div id="slideshow">
+   <div>
+     <img src="data1_bright/images/1.jpg" width="600px" height="400px">
+   </div>
+   <div>
+     <img src="data1_bright/images/2.jpg"  width="600px" height="400px">
+   </div>
+   <div>
+     <img src="data1_bright/images/3.jpg"  width="600px" height="400px">
+   </div>
+   <div>
+      <img src="data1_bright/images/8.jpg"  width="600px" height="400px">
+   </div>
+</div>
+  </div>
+        </div>
+      </div>
+	</div>
+	</div>
+	</div>
+
+
+    <div class="site-section bg-light">
+      <div class="container">
+	   <h5 class="text-black"><font color="#6f0683" style="font-family:Segoe UI;"><center><strong>
+"No Prep, No Stress, simply raise your Bright kid at home with our Curriculum, Book Kit,  Montessori Materials, Learning App, Weekly Live interactions and support from our expert preschool Teachers."
+</center></strong></font></h5>
+ <h3 class="text-black"  style="margin-top:40px;"><center><font color="#fda148" style="font-family:Amarnath;font-size:36px;"><b>Bright Start...Right Start @ Home</b></font></center></h3>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active nav-tabs-link" id="home-tab" data-toggle="tab" href="#studentsQ" role="tab"
+              aria-controls="studentsQ" aria-selected="true">What will your Child (Student) get?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-tabs-link" id="profile-tab" data-toggle="tab" href="#parentsQ" role="tab"
+              aria-controls="paretntsQ" aria-selected="false">What will you (Parent) get?</a>
+          </li>
+
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show the-tab active" id="studentsQ" role="tabpanel" aria-labelledby="home-tab">
+            Your child gets many First of its kind in India
+
+            unique learning Kits, materials,  digital lessons and Live Interactions :
+            <ul>
+              <li> Regular weekly live interactions with our experienced Teachers</li>
+              <li> Enriching Book-Kit and Worksheets with Anytime-Anywhere Teacher</li>
+
+
+              <li> High quality, well crafted Montessori Materials made in our workshop for Hands-on Learning for your Child (in Montessori Upgrade Program)
+ </li>
+              <li> Individual Interactive Smart Class Activities  </li>
+              <li> Brilla Multiple Intelligence supplemental Mobile Learning App </li>
+              <li> Marks Card and Certificate by Bright Kid Montessori House </li>
+            </ul>
+
+          </div>
+          <div class="tab-pane the-tab fade" id="parentsQ" role="tabpanel" aria-labelledby="profile-tab">
+            A world class Parent Support program and Toolkit for Parents
+            <ul>
+              <li> Curriculum and time table for your child's preschool program at home. </li>
+              <li> Step by Step weekly guidance and Parenting Tips through webinars. </li>
+              <li> Bright Concept Teacher Smart TV App for co-viewing and teaching your child. </li>
+              <li> Live Ticketing system ( over phone and web ) support to provide you any clarifications and support. </li>
+              <li> Appraisal Tips and Assessment papers for Continuious & Comprehensive Evaluation </li>
+
+</ul>
+          </div>
+        </div>
+ <h5 class="text-black" style="margin-top:40px;"><font color="#6f0683" style="font-family:Segoe UI;"><center><strong>
+We know you would give the whole world to your child if you could but a well rounded education and preparation for life are the best gift you could ever give to your child.
+</strong></center></font></h5>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  </div>
+
+
+<div class="site-section bg-light" style="margin:0;padding:0;">
+<iframe src="http://www.kidathome.brightkidmont.com/www.misshumblebee.com/" width="100%" height="900px"></iframe>
+</div>
+
+
+    <div class="site-section bg-light" style="margin:0;padding:0;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-5 mb-md-0">
+		    <h3 class="text-black"><center><font color="red" style="font-family:Amarnath;font-size:36px;">Bright Kid Montessori House<br> Curriculum Overview</b></font></center></h3>
+           <iframe  src="https://www.youtube.com/embed/85Qr4AJmD4U"  height="300px" style="width: 100%;" frameborder="0"  allowfullscreen> </iframe>
+          </div>
+          <div class="col-md-5 ml-auto pl-md-5">
+            <h3 class="text-black">About Us</h3>
+             <p>Bright Kid Montessori House was born in April 2007, with a strong conviction to develop children using scientific Montessori methodology, blended with modern multimedia and conventional methods of classroom teaching. Since our humble beginning we have grown into a much bigger family consisting of thousands of children. Our blended methodology of developing children has been extremely successful and has been well proven. Our team consists of well trained Montessorians, experienced and motivated teachers who work under the guidance of few highly accomplished management professionals having credentials from IITs and IIMs.</p>
+			</div>
+        </div>
+      </div>
+    </div>
+
+
+
+  <div class="site-section py-5 bg-warning">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 d-flex">
+         <h2 class="text-white m-0">Bring Sunshine of Learning & Fun to Your Kids at Home</h2>
+          <a href="#" class="btn btn-primary btn-custom-1 py-3 px-5 ml-auto">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <h2 class="footer-heading mb-3">About Us</h2>
+          <p class="mb-5">Bright Kid Montessori House was founded in 2007 and is associated with providing excellent
+            Montessori based education blended with traditional methods of classroom learning and integrated with the
+            best of education technology. Our blended methodology of developing children at our preschools has been
+            extremely successful and well proven having more than 25,000 students graduating with us over the past
+            decade. Our team comprises well-trained Montessorians, experienced and motivated teachers and attendants who
+            work under the guidance of highly accomplished management professionals having credentials from IITs and
+            IIMs. We are committed in providing the best-of-class, warm, nurturing, well ventilated, safe and secure
+            environment for children.</p>
+
+
+        </div>
+        <div class="col-lg-8 ml-auto">
+          <div class="row">
+            <div class="col-lg-4 ml-auto">
+              <h2 class="footer-heading mb-4">Navigation</h2>
+              <ul class="list-unstyled">
+                <li><a href="#">Bright Kid Montessori House</a></li>
+                <li><a href="#">Bright Kid at Home Preschool Program</a></li>
+                <li><a href="#">Benefits of Bright Kid at Home Preschool Program</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Programs</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h2 class="footer-heading mb-4">Program Details</h2>
+              <ul class="list-unstyled">
+                <li><a href="#">Preschool Study Program</a></li>
+                <li><a href="#">Montessori Upgrade Program</a></li>
+              </ul>
+
+            </div>
+            <div class="col-lg-4">
+              <h2 class="footer-heading mb-4">Learning Edge</h2>
+              <ul class="list-unstyled">
+                <li><a href="#">Home Learning edge</a></li>
+                <li><a href="#">Smart learning Edge</a></li>
+                <li><a href="#">Montessori Learning Edge</a></li>
+              </ul>
+
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </footer>
+
+  </div>
+  <script>
+
+
+setInterval(function() {
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+}, 3000);
+  </script>
+  <script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.0.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/main.js"></script>
+  <script src="https://widget.flowxo.com/embed.js" data-fxo-widget="eyJ0aGVtZSI6IiM2N2MxOGUiLCJ3ZWIiOnsiYm90SWQiOiI1ZTlmNTkwZWI3ZDUyODAwMGUyMmQ5NzMiLCJ0aGVtZSI6IiM2N2MxOGUifSwicG9wdXBIZWlnaHQiOiI2MCUifQ==" async defer></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,819 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Bright Kid @Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700|Indie+Flower" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+  	<!-- Custom-Files -->
+	<!-- Bootstrap-Core-Css -->
+	<link rel="stylesheet" href="css_bright/css/bootstrap.css">
+	<!-- Style-Css -->
+	<link rel="stylesheet" href="css_bright/css/style.css" type="text/css" media="all" />
+	<!-- Font-Awesome-Icons-Css -->
+	<link rel="stylesheet" href="css_bright/css/fontawesome-all.css">
+	<!-- //Custom-Files -->
+	<!-- Web-Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+	 rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+	<!-- //Web-Fonts -->
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Google Fonts
+        ============================================= -->
+        <link href='http://fonts.googleapis.com/css?family=Dosis:400,500,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+        <!-- Stylesheets
+        ============================================= -->
+        <link rel="stylesheet" href="css_bright/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="css_bright/plugin.css" type="text/css" />
+        <link rel="stylesheet" href="css_bright/style.css" type="text/css" />
+        <link rel="stylesheet" href="css_bright/responsive.css" type="text/css" />
+
+        <!-- External Styles
+        ============================================= -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+        <!-- JavaScripts
+        ============================================= -->
+        <script type="text/javascript" src="js_bright/jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <style>
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+    .nav-item {
+      width: 50%;
+    }
+    .nav-tabs-link {
+      width: 100%;
+      display: inline-block;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 22px;
+      border-top-right-radius: 20px !important;
+      border-top-left-radius: 20px !important;
+      border-radius: 0;
+      border-width: 6px !important;
+      border-style: solid !important;
+      margin: 30px 0px 0px 0px;
+      background: #2fa5b2;
+      color: #fff !important;
+      border-color: #2596a2 !important;
+    }
+
+    .the-tab {
+      padding: 40px;
+    font-size: 20px;
+    background: #dc3545 !important;
+    color: #fff !important;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 6px solid #b32230 !important;
+    border-top-color: #dc3545 !important;
+    }
+
+    .active.nav-tabs-link {
+      background-color: #dc3545 !important;
+    border-color: #b32230 !important;
+    border-bottom-color: #dc3545 !important;
+    }
+
+#nav {
+    position:relative;
+    width:1000px;
+    margin-top:50px;
+    padding:10px;
+	height:60px;
+	margin-left:250px;
+}
+
+ul#navigation {
+    margin:0px auto;
+    position:relative;
+    float:left;
+    border-left:0px solid #fff;
+    border-right:1px solid #fff;
+}
+ul#navigation li {
+    display:inline;
+    font-size:12px;
+    font-weight:bold;
+    margin:0;
+    padding:0;
+    float:left;
+    position:relative;
+    border-top:1px solid #c4dbe7;
+    border-bottom:2px solid #c4dbe7;
+}
+
+ul#navigation li a {
+    padding:10px 25px;
+    color:#616161;
+    text-shadow:1px 1px 0px #fff;
+    text-decoration:none;
+    display:inline-block;
+    border-right:1px solid #fff;
+    border-left:1px solid #C2C2C2;
+    border-top:1px solid #fff;
+    background: #f5f5f5;
+
+    -webkit-transition:color 0.2s linear, background 0.2s linear;
+    -moz-transition:color 0.2s linear, background 0.2s linear;
+    -o-transition:color 0.2s linear, background 0.2s linear;
+    transition:color 0.2s linear, background 0.2s linear;
+}
+
+ul#navigation li a:hover {
+    background:#e3f0fc;
+    color:#282828;
+}
+
+ul#navigation li a.first {
+    border-left: 0 none;
+}
+
+ul#navigation li a.last {
+    border-right: 0 none;
+}
+
+ul#navigation li:hover > a {
+    background:#fff;
+}
+/* Drop-Down Navigation */
+ul#navigation li:hover > ul
+{
+/*these 2 styles are very important,
+being the ones which make the drop-down to appear on hover */
+    visibility:visible;
+    opacity:1;
+}
+
+ul#navigation ul, ul#navigation ul li ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+/*the next 2 styles are very important,
+being the ones which make the drop-down to stay hidden */
+    visibility:hidden;
+    opacity:0;
+    position: absolute;
+    z-index: 99999;
+    width:180px;
+    background:#e3f0fc;
+    box-shadow:1px 1px 3px #ccc;
+/* css3 transitions for smooth hover effect */
+    -webkit-transition:opacity 0.2s linear, visibility 0.2s linear;
+    -moz-transition:opacity 0.2s linear, visibility 0.2s linear;
+    -o-transition:opacity 0.2s linear, visibility 0.2s linear;
+    transition:opacity 0.2s linear, visibility 0.2s linear;
+}
+
+ul#navigation ul {
+    top: 43px;
+    left: 1px;
+}
+
+ul#navigation ul li ul {
+    top: 0;
+    left: 181px; /* strong related to width:180px; from above */
+}
+
+ul#navigation ul li {
+    clear:both;
+    width:100%;
+    border:0 none;
+    border-bottom:1px solid #c9c9c9;
+}
+
+ul#navigation ul li a {
+    background:none;
+    padding:7px 15px;
+    color:#616161;
+    text-shadow:1px 1px 0px #fff;
+    text-decoration:none;
+    display:inline-block;
+    border:0 none;
+    float:left;
+    clear:both;
+    width:150px;
+}
+
+
+    div.scrollmenu {
+      overflow: auto;
+      white-space: nowrap;
+    }
+
+
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+  <div class="site-wrap" id="home-section">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+
+    <header class="site-navbar site-navbar-target" role="banner">
+
+      <div class="container mb-3">
+        <div class="d-flex align-items-center">
+          <div class="site-logo mr-auto">
+            <img src= "images\bkhl.png" alt="bkhl" width="240" height="120">
+
+          </div>
+          <div class="site-quick-contact d-none d-lg-flex ml-auto ">
+            <div class="d-flex site-info align-items-center mr-5">
+              <img src= "images\bkmhl.png" alt="bkhl" width="240" height="120" align="right">
+            </div>
+          </div>
+        </div>
+      </div>
+<nav id="nav">
+    <ul id="navigation">
+        <li><a href="home.html" class="first">Home</a></li>
+        <li><a href="curriculum.html">Curriculum & Level </a>
+        </li>
+        <li><a href="#">Learning Edge &raquo;</a>
+            <ul>
+                <li><a href="smart_learning_edge.html">Smart Learning Edge</a></li>
+                <li><a href="enchancing_social_skills.html">Enhancing scoial skills</a></li>
+                <li><a href="montessori_learning_edge.html">Montessori Learning Edge</a></li>
+				<li><a href="Mybrightbook.html">My Bright Books</a></li>
+            </ul>
+        </li>
+		<li><a href="https://brightkidmont.viewpage.co/bkhome">Support & Enquire</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="#">Enrollment</a></li>
+        <li><a href="#" class="last">Contact Us</a></li>
+    </ul>
+</nav>
+
+
+    </header>
+
+ <div class="ftco-blocks-cover-1">
+
+        <div class="site-section-cover overlay" data-stellar-background-ratio="0.5" style="background-image: url('data1_bright/images/7.jpg')">
+        <div class="container">
+          <div class="row align-items-center " style="margin-top:250px;">
+            <div class="col-md-10 mt-4 pt-4">
+              <h1 class="mb-3 font-weight-bold text-teal">"When you tell and I forget, teach me and I may remember, involve me and I learn"</h1>
+              <p>~ Benjamin Franklin</p>
+            </div>
+            <div class="col-md-6 ml-auto align-self-end">
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div class="details-w3l">
+		<div class="container py-xl-5 py-lg-3">
+			<h3 class="title text-capitalize font-weight-light text-dark text-center mb-5"><b>Curriculum</b>
+			</h3>
+
+			<div class="row inner_sec_info pt-md-4">
+				<!-- left side -->
+				<div class="col-lg-12 single-left">
+					<div class="single-left1">
+						<h6 class="details-heading my-4">Curriculum Information</h6>
+
+						<p class="mt-3" style="color:#000080;;">Brightkid@Home Curriculum has been developed based on the outcome of many years of Experimental Learning in Early Childhood Education by Bright Kid Montessori House. Small children have innate ability to learn very rapidly if they are engaged with various activities . Brightkid@Home follows an <strong class="mt-3" style="color:#000080;">'Activity based Learning' </strong>curriculum and we call it <strong class="mt-3" style="color:#000080;">'Hands On...Minds On..'</strong> approach that propels  Work the mind, Reveal the Child and Unleash the potential of the child.
+Brightkid@Home academic curriculum is a blend of 4 very effective methods to ensure holistic development of young children with varied exposure to different methods of learning:</p>
+
+
+
+						<p class="mt-3" style="color:#ad14a8;">1. Montessori Activities</p>
+						<p class="mt-3" style="color:#ad14a8;">2. Book-Kit Activities</p>
+						<p class="mt-3" style="color:#ad14a8;">3. Interactive Digital Class Activities</p>
+						<p class="mt-3" style="color:#ad14a8;">4. Thematic Activities</p>
+
+
+			</div>
+
+
+
+
+
+
+
+
+	<br>
+
+						<div class="news-section">
+		<div class="container py-lg-3">
+			<div class="row news-grids-w3l pt-md-4">
+				<div class="col-md-6 news-grid">
+
+					<a href="#">
+
+
+					<iframe id="yvideo" src="https://www.youtube.com/embed/85Qr4AJmD4U?rel=0" width="100%" height="250"
+        allowfullscreen="allowfullscreen"
+        mozallowfullscreen="mozallowfullscreen"
+        msallowfullscreen="msallowfullscreen"
+        oallowfullscreen="oallowfullscreen"
+        webkitallowfullscreen="webkitallowfullscreen"> </iframe>
+					</a>
+				</div>
+
+
+
+
+
+
+				<div class="col-md-6 news-grid my-md-0 my-sm-5 my-4">
+
+					<a href="#">
+
+
+							<iframe id="yvideo" src="https://www.youtube.com/embed/mNu11ih4_3g?rel=0" width="100%" height="250"
+        allowfullscreen="allowfullscreen"
+        mozallowfullscreen="mozallowfullscreen"
+        msallowfullscreen="msallowfullscreen"
+        oallowfullscreen="oallowfullscreen"
+        webkitallowfullscreen="webkitallowfullscreen"> </iframe>
+
+					</a>
+				</div>
+
+			</div>
+		</div>
+
+				</div>
+
+
+		</div>
+
+
+
+
+				<!-- //left side -->
+
+			<!-- right side -->
+
+
+	<!-- news -->
+	<div class="news-section">
+		<div class="container py-lg-3">
+			<h3 class="title text-capitalize font-weight-light text-dark text-center mb-5">Curriculum Orientations
+			</h3>
+			<div class="row news-grids-w3l pt-md-4">
+				<div class="col-md-4 news-grid">
+				<div class="news-events-agile event-colo1 py-2 px-3">
+							<h5 class="float-left">
+								<a href="#" class="text-white" style="text-align:center;">Montessori Curriculum</a>
+							</h5>
+							<div class="clearfix"></div>
+						</div>
+					<a href="#">
+
+						<iframe id="yvideo" src="https://www.youtube.com/embed/m4yVuN4sF4o?rel=0" width="100%" height="250"
+        allowfullscreen="allowfullscreen"
+        mozallowfullscreen="mozallowfullscreen"
+        msallowfullscreen="msallowfullscreen"
+        oallowfullscreen="oallowfullscreen"
+        webkitallowfullscreen="webkitallowfullscreen"> </iframe>
+					</a>
+				</div>
+
+
+
+
+
+
+				<div class="col-md-4 news-grid my-md-0 my-sm-5 my-4">
+					<div class="news-events-agile py-2 px-3">
+							<h5 class="float-left">
+								<a href="#" class="text-white">Book-Kit Curriculum</a>
+							</h5>
+							<div class="clearfix"></div>
+						</div>
+					<a href="#">
+
+
+							<iframe id="yvideo" src="https://www.youtube.com/embed/mNu11ih4_3g?rel=0" width="100%" height="250"
+        allowfullscreen="allowfullscreen"
+        mozallowfullscreen="mozallowfullscreen"
+        msallowfullscreen="msallowfullscreen"
+        oallowfullscreen="oallowfullscreen"
+        webkitallowfullscreen="webkitallowfullscreen"> </iframe>
+
+					</a>
+				</div>
+
+
+
+
+
+			<div class="col-md-4 news-grid my-md-0 my-sm-5 my-4">
+					<div class="news-events-agile event-colo3 py-2 px-3">
+							<h5 class="float-left">
+								<a href="#" class="text-white">Smart Class Curriculum</a>
+							</h5>
+							<div class="clearfix"></div>
+						</div>
+					<a href="#">
+
+
+							<iframe id="yvideo" src="https://www.youtube.com/embed/cPGGuZmb0Gs?rel=0" width="100%" height="250"
+        allowfullscreen="allowfullscreen"
+        mozallowfullscreen="mozallowfullscreen"
+        msallowfullscreen="msallowfullscreen"
+        oallowfullscreen="oallowfullscreen"
+        webkitallowfullscreen="webkitallowfullscreen"> </iframe>
+
+					</a>
+			</div>
+			</div>
+		</div>
+
+
+
+
+
+				</div>
+
+
+
+
+
+
+		</div>
+	</div>
+	 	 <section id="content" class="single-wrapper" style="margin:0;padding:0;">
+                <!-- Page Title -->
+                <div class="grey-background wow fadeIn">
+                    <div class="container">
+                        <div class="heading-block page-title wow fadeInUp">
+                            <h1 style="font-family: desyrel,cursive!important;color: red;">Playgroup</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SINGLE CLASS START
+                ============================================= -->
+                <div class="single-classes clearfix">
+                    <div class="container">
+                        <div class="row">
+						<div class="class-gallery wow fadeIn col-md-6 clearfix">
+                                <div class="class-flexslider">
+                                    <ul class="slides">
+                            <!-- Class Gallery Start -->
+
+  <div class="mySlides">
+				  <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td style="font-family:'Poppins',sans-serif;text-transform: none;color:white;background-color:#ec278f;">Age Group :</td>
+                                            <td style="font-family:'Poppins',sans-serif;text-transform: none;color:black;"><b> 1.6 - 2.6 Years</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-family:'Poppins',sans-serif;text-transform: none;color:white;background-color:green; ">Duration (Per Day) :</td>
+                                            <td style="font-family:'Poppins',sans-serif;text-transform: none;color:black;"><b>3 Hrs/Day</b></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+  </div>
+    </ul>
+ </div>
+  </div>
+                            <!-- Class Gallery End -->
+
+                            <!-- Class Content Start -->
+                            <div class="class-content wow fadeIn col-md-6 clearfix">
+
+
+                                <p>Our playgroup program focuses on nurturing the development of the absorbent mind, physical co- ordination and gross motor skills by offering hands on learning.</p>
+                                <p>Book-Kit activities start with patterning skills, colouring work sheets, joining dotted lines etc. for development of fine motor skills . Digital smart class activities develop general awareness of age appropriate </p>
+
+                               <p>Our Playgroup or Toddler program is based on Thematic teaching for development of Language, Expressions, Self-help, Good manners and Creativity. </p>
+
+							   <ul class="with-icon">
+
+                                </ul>
+
+                            </div>
+                            <!-- Class Content End -->
+
+
+                        </div>
+                    </div>
+                </div>
+				<section id="content" class="single-wrapper" style="margin:0;padding:0;">
+                <!-- Page Title -->
+                <div class="grey-background wow fadeIn">
+                    <div class="container">
+                        <div class="heading-block page-title wow fadeInUp">
+                            <h1 style="font-family: desyrel,cursive!important;color: red;">Nursery</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SINGLE CLASS START
+                ============================================= -->
+                <div class="single-classes clearfix">
+                    <div class="container">
+                        <div class="row">
+						<div class="class-gallery wow fadeIn col-md-6 clearfix">
+                                <div class="class-flexslider">
+
+ 			  <table class="table">
+
+
+								<tbody>
+                                        <tr>
+                                            <td style="font-family:'Poppins',sans-serif;text-transform: none;color:white;background-color:#ec278f;">Age Group :</td>
+                                            <td style="font-family:'Poppins',sans-serif;text-transform: none;color:black;"><b> 2.6 - 3.6 Years</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-family:'Poppins',sans-serif;text-transform: none;color:white;background-color:green; ">Duration (Per Day) :</td>
+                                            <td style="font-family:'Poppins',sans-serif;text-transform: none;color:black;"><b>3 Hrs/Day</b></td>
+                                        </tr>
+
+                                    </tbody>
+
+
+
+							   </table>
+
+</div>
+
+  </div>
+                            <!-- Class Gallery End -->
+
+                            <!-- Class Content Start -->
+ <div class="class-content wow fadeIn col-md-6 clearfix">
+
+
+                                <p>Montessori activities for the Nursery group of children include Exercise of Practical Life that not only helps them to perform daily life activities independently but also gain control of movement - sorting, pouring, folding, rolling etc. by using scientifically designed Montessori materials. Sensorial activities allow children to see, touch and feel various physical properties of matter. Arithmetic activities introduce concepts of number, fun of counting and understanding the relationship between number names and quantities. Language activities such as phonics & writing skills are introduced to children through various hands-on processes like, tracing of sand paper letters, use of moveable alphabets.</p>
+                                <p>Book-Kit activities start with patterning skills, colouring work sheets, joining dotted lines etc. for development of fine motor skills . Digital smart class activities develop general awareness of age appropriate concepts of science and environmentthrough class interaction by teacher. Children participate in Thematic activities, through role plays, story telling and show and tell all round the year.</p>
+
+
+                            </div>
+                            <!-- Class Content End -->
+
+
+                        </div>
+                    </div>
+                </div>
+				   <section id="content" class="single-wrapper" style="margin:0;padding:0;">
+                <!-- Page Title -->
+                <div class="grey-background wow fadeIn">
+                    <div class="container">
+                        <div class="heading-block page-title wow fadeInUp">
+                            <h1 style="font-family: desyrel,cursive!important;color: red;">LKG</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SINGLE CLASS START
+                ============================================= -->
+                <div class="single-classes clearfix">
+                    <div class="container">
+                        <div class="row">
+						<div class="class-gallery wow fadeIn col-md-6 clearfix">
+                                <div class="class-flexslider">
+		  <table class="table">
+
+									<tbody>
+                                        <tr>
+                                            <td style="font-family:'Poppins',sans-serif;text-transform: none;color:white;background-color:#ec278f;">Age Group :</td>
+                                            <td style="font-family:'Poppins',sans-serif;text-transform: none;color:black;"><b> 3.6 - 4.6 Years</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-family:'Poppins',sans-serif;text-transform: none;color:white;background-color:green; ">Duration (Per Day) :</td>
+                                            <td style="font-family:'Poppins',sans-serif;text-transform: none;color:black;"><b>3 Hrs/Day</b></td>
+                                        </tr>
+
+                                    </tbody>
+
+
+
+                                </table>
+  </div>
+  </div>
+                            <!-- Class Gallery End -->
+
+                            <!-- Class Content Start -->
+                         <div class="class-content wow fadeIn col-md-6 clearfix">
+
+
+                                <p>Objective of the LKG
+
+                                 program is to prepare children to perform age appropriate academic and extra-curricular activities meeting the requirements of various education board standards such as CBSE/ICSE or AMI (Association of Montessori International).</p>
+                                <p>Book-Kit activities start with strengthening patterning skills, colouring work sheets, joining dotted lines etc. for refinement of fine motor skills of writing. It further builds on english conversation and class interaction skills, reading and writing, introduction of cursive hand writing, vocabulary development and formation of simple sentences. Also we cover general awareness of age appropriate concepts of science and environment through class interaction by teacher. </p>
+                               <p>This group performs extensive Montessori activities. Montessori activities include not only refinement of Exercises of Practical Life but also perform various Montessori activities on Arithmetic, Language, Sensorial and Science . Interactive digital smart class activities make learning extremely enjoyable for the children.</p>
+
+
+                            </div>
+                            <!-- Class Content End -->
+
+
+                        </div>
+                    </div>
+                </div>
+
+	            <section id="content" class="single-wrapper" style="margin:0;padding:0;">
+                <!-- Page Title -->
+                <div class="grey-background wow fadeIn">
+                    <div class="container">
+                        <div class="heading-block page-title wow fadeInUp">
+                            <h1 style="font-family: desyrel,cursive!important;color: red;">UKG</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SINGLE CLASS START
+                ============================================= -->
+                <div class="single-classes clearfix">
+                    <div class="container">
+                        <div class="row">
+						<div class="class-gallery wow fadeIn col-md-6 clearfix">
+                                <div class="class-flexslider">
+			  <table class="table">
+
+									      <tbody>
+                                        <tr>
+                                            <td style="font-family:'Poppins',sans-serif;text-transform: none;color:white;background-color:#ec278f;">Age Group :</td>
+                                            <td style="font-family:'Poppins',sans-serif;text-transform: none;color:black;"><b> 4.6 - 5.6 years</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-family:'Poppins',sans-serif;text-transform: none;color:white;background-color:green; ">Duration (Per Day) :</td>
+                                            <td style="font-family:'Poppins',sans-serif;text-transform: none;color:black;"><b>3 Hrs/Day</b></td>
+                                        </tr>
+
+                                    </tbody>
+
+
+                                </table>
+  </div>
+  </div>
+                            <!-- Class Gallery End -->
+
+                            <!-- Class Content Start -->
+                            <div class="class-content wow fadeIn col-md-6 clearfix">
+
+
+                                <p>Our UKG curriculum meets the requirements of CBSE/ICSE/AMI. On language and literature front our program aims at developing the competence in talking, listening and becoming readers and writers with growing vocabulary and increased fluency to express their thoughts and to convey the meaning to the listeners. Using phonics, understanding the formation of words and thus sentences for the development of good writing skills in cursive handwriting is an integral part of language development. </p>
+                                <p>This program covers development of pre-mathematical skills related to comparison, sorting, matching, ordering, sequencing and counting. Four basic mathematical operations are also introduced at the UKG level.  </p>
+
+
+                            </div>
+                            <!-- Class Content End -->
+
+
+                        </div>
+                    </div>
+                </div>
+				<div class="about py-5" style="margin:0;padding:0;">
+		<div class="container py-xl-5 py-lg-3">
+			<h3 class="title font-weight-light text-center mb-5" style="color:#b71540;">Curriculum Package for Brightkid@Home
+			</h3>
+			<div class="row pt-md-4">
+				<div class="col-lg-12 about_right">
+				<br>
+				<div class="about_left-list">
+						<h6 class="mb-lg-3 mb-2 font-weight-bold" style="color:#ff7600;">Curriculum Package for Brightkid@Home parents consists of :</h6>
+						<ul class="list-unstyled">
+							<li class="mb-2" style="color:#000080;">
+								<i class="fas fa-check mr-3"></i>Class syllabus</li>
+							<li class="mb-2" style="color:#000080;">
+								<i class="fas fa-check mr-3"></i>Academic Guidelines</li>
+							<li class="mb-2" style="color:#000080;">
+								<i class="fas fa-check mr-3"></i>Time Tables</li>
+							<li class="mb-2" style="color:#000080;">
+								<i class="fas fa-check mr-3"></i>Online Access to Bright Concept Teachers</li>
+							<li class="mb-2" style="color:#000080;">
+								<i class="fas fa-check mr-3"></i>On-line Access to Smart Class Activity</li>
+								<li class="mb-2" style="color:#000080;">
+								<i class="fas fa-check mr-3"></i>Social Development Guidelines</li>
+								<li class="mb-2" style="color:#000080;">
+								<i class="fas fa-check mr-3"></i>Child’s Progress Evaluation and Appraisal Guidelines</li>
+								<li class="mb-2" style="color:#000080;">
+								<i class="fas fa-check mr-3"></i>Montessori Activity Calendar and Guidelines (in Montessori Upgrade Program)</li>
+								<li class="mb-2" style="color:#000080;">
+								<i class="fas fa-check mr-3"></i>Book Kit and Work Sheets of Bright Kid Montessori House ( with Anytime Anywhere Teacher App)</li>
+								<li class="mb-2" style="color:#000080;">
+								<i class="fas fa-check mr-3"></i>Brilla - Multiple Intelligence Mobile App</li>
+								<li class="mb-2" style="color:#000080;">
+								<i class="fas fa-check mr-3"></i>Montessori Materials Kit for Hands on Learning ( in Montessori Upgrade Program)</li>
+								<li class="mb-2" style="color:#000080;">
+								<i class="fas fa-check mr-3"></i>Progress report card and course completion certificate from Bright Kid Montessori House</li>
+								<li class="mb-2" style="color:#000080;">
+								<i class="fas fa-check mr-3"></i>Regular professional guidelines through webinar’s to parents to help them to be able to guide, train and teach their child as per Brigtkid@Home program Curriculum.</li>
+								<li class="mb-2" style="color:#000080;">
+								<i class="fas fa-check mr-3"></i>Online and Telephonic support to parents by our experienced Teaching and Academic Staffs through our CRM Ticketing system.</li>
+						<li class="mb-2" style="color:#000080;">
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+	<!-- Js files -->
+	<!-- JavaScript -->
+	<script src="css_bright/js/jquery-2.2.3.min.js"></script>
+	<!-- Default-JavaScript-File -->
+	<script src="css_bright/js/bootstrap.js"></script>
+	<!-- Necessary-JavaScript-File-For-Bootstrap -->
+
+	<!-- numscroller-js-file -->
+	<script src="css_bright/js/numscroller-1.0.js"></script>
+	<!-- //numscroller-js-file -->
+
+	<!-- smooth scrolling -->
+	<script src="css_bright/js/SmoothScroll.min.js"></script>
+	<!-- //smooth scrolling -->
+
+	<!-- move-top -->
+	<script src="css_bright/js/move-top.js"></script>
+	<!-- easing -->
+	<script src="css_bright/js/easing.js"></script>
+	<!--  necessary snippets for few javascript files -->
+	<script src="css_bright/js/edulearn.js"></script>
+
+	<!-- //Js files -->
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/aos.js"></script>
+
+    <script src="js/main.js"></script>
+
+  </body>
+
+</html>

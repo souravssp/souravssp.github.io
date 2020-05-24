@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Bright Kid @Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700|Indie+Flower" rel="stylesheet">
+ <script>document.getElementsByTagName("html")[0].className += " js";</script>
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+   <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <style>
+    .nav-item {
+      width: 50%;
+    }
+    .nav-tabs-link {
+      width: 100%;
+      display: inline-block;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 50px;
+      border-top-right-radius: 20px !important;
+      border-top-left-radius: 20px !important;
+      border-radius: 0;
+      border-width: 6px !important;
+      border-style: solid !important;
+      margin: 30px 0px 0px 0px;
+      background: #2fa5b2;
+      color: #fff !important;
+      border-color: #2596a2 !important;
+    }
+
+    .the-tab {
+      padding: 40px;
+    font-size: 20px;
+    background: #dc3545 !important;
+    color: #fff !important;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 6px solid #b32230 !important;
+    border-top-color: #dc3545 !important;
+    }
+
+    .active.nav-tabs-link {
+      background-color: #dc3545 !important;
+    border-color: #b32230 !important;
+    border-bottom-color: #dc3545 !important;
+    }
+	.dropdown {
+  width: 1000px;
+      height: 50px;
+      margin: 0;
+      z-index: 99;
+      position: relative;
+}
+
+#nav {
+    position:relative;
+    width:1000px;
+    margin-top:50px;
+    padding:10px;
+	height:60px;
+	margin-left:250px;
+}
+
+ul#navigation {
+    margin:0px auto;
+    position:relative;
+    float:left;
+    border-left:0px solid #fff;
+    border-right:1px solid #fff;
+}
+
+ul#navigation li {
+    display:inline;
+    font-size:12px;
+    font-weight:bold;
+    margin:0;
+    padding:0;
+    float:left;
+    position:relative;
+    border-top:1px solid #c4dbe7;
+    border-bottom:2px solid #c4dbe7;
+}
+
+ul#navigation li a {
+    padding:10px 25px;
+    color:#616161;
+    text-shadow:1px 1px 0px #fff;
+    text-decoration:none;
+    display:inline-block;
+    border-right:1px solid #fff;
+    border-left:1px solid #C2C2C2;
+    border-top:1px solid #fff;
+    background: #f5f5f5;
+
+    -webkit-transition:color 0.2s linear, background 0.2s linear;
+    -moz-transition:color 0.2s linear, background 0.2s linear;
+    -o-transition:color 0.2s linear, background 0.2s linear;
+    transition:color 0.2s linear, background 0.2s linear;
+}
+
+ul#navigation li a:hover {
+    background:#e3f0fc;
+    color:#282828;
+}
+
+ul#navigation li a.first {
+    border-left: 0 none;
+}
+
+ul#navigation li a.last {
+    border-right: 0 none;
+}
+
+ul#navigation li:hover > a {
+    background:#fff;
+}
+/* Drop-Down Navigation */
+ul#navigation li:hover > ul
+{
+/*these 2 styles are very important,
+being the ones which make the drop-down to appear on hover */
+    visibility:visible;
+    opacity:1;
+}
+
+ul#navigation ul, ul#navigation ul li ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+/*the next 2 styles are very important,
+being the ones which make the drop-down to stay hidden */
+    visibility:hidden;
+    opacity:0;
+    position: absolute;
+    z-index: 99999;
+    width:180px;
+    background:#e3f0fc;
+    box-shadow:1px 1px 3px #ccc;
+/* css3 transitions for smooth hover effect */
+    -webkit-transition:opacity 0.2s linear, visibility 0.2s linear;
+    -moz-transition:opacity 0.2s linear, visibility 0.2s linear;
+    -o-transition:opacity 0.2s linear, visibility 0.2s linear;
+    transition:opacity 0.2s linear, visibility 0.2s linear;
+}
+
+ul#navigation ul {
+    top: 43px;
+    left: 1px;
+}
+
+ul#navigation ul li ul {
+    top: 0;
+    left: 181px; /* strong related to width:180px; from above */
+}
+
+ul#navigation ul li {
+    clear:both;
+    width:100%;
+    border:0 none;
+    border-bottom:1px solid #c9c9c9;
+}
+
+ul#navigation ul li a {
+    background:none;
+    padding:7px 15px;
+    color:#616161;
+    text-shadow:1px 1px 0px #fff;
+    text-decoration:none;
+    display:inline-block;
+    border:0 none;
+    float:left;
+    clear:both;
+    width:150px;
+}
+
+  </style>
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="background-image: linear-gradient(to bottom, #808688, #898f92, #92989c, #9ba2a7, #a5abb1, #aab1b7, #b0b7be, #b5bdc4, #b7c1c7, #b9c6c9, #bccacb, #c0cecd);">
+
+
+  <div class="site-wrap" id="home-section">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+
+    <header class="site-navbar site-navbar-target" role="banner">
+
+      <div class="container mb-3">
+        <div class="d-flex align-items-center">
+          <div class="site-logo mr-auto">
+            <img src= "images\bkhl.png" alt="bkhl" width="240" height="120">
+
+          </div>
+          <div class="site-quick-contact d-none d-lg-flex ml-auto ">
+            <div class="d-flex site-info align-items-center mr-5">
+              <img src= "images\bkmhl.png" alt="bkhl" width="240" height="120" align="right">
+            </div>
+          </div>
+        </div>
+      </div>
+<nav id="nav">
+    <ul id="navigation">
+        <li><a href="home.html" class="first">Home</a></li>
+        <li><a href="curriculum.html">Curriculum & Level</a>
+        </li>
+        <li><a href="#">Learning Edge &raquo;</a>
+            <ul>
+                <li><a href="smart_learning_edge.html">Smart Learning Edge</a></li>
+                <li><a href="enchancing_social_skills.html">Enhancing scoial skills</a></li>
+                <li><a href="montessori_learning_edge.html">Montessori Learning Edge</a></li>
+				<li><a href="Mybrightbook.html">My Bright Books</a></li>
+            </ul>
+        </li>
+		<li><a href="https://brightkidmont.viewpage.co/bkhome">Support & Enquire</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="#">Enrollment</a></li>
+        <li><a href="#" class="last">Contact Us</a></li>
+    </ul>
+</nav>
+
+    </header>
+
+    <div class="ftco-blocks-cover-1">
+
+        <div class="site-section-cover overlay" data-stellar-background-ratio="0.5" style="background-image: url('data1_bright/images/4.jpg')">
+        <div class="container">
+          <div class="row align-items-center " style="margin-top:250px;">
+            <div class="col-md-10 mt-4 pt-4">
+              <h1 class="mb-3 font-weight-bold text-teal">Frequently Asked Questions</h1>
+              <h1> Want to know more about Bright Kid @ Home?</h1>
+              <h1>Use the resources below to learn and explore more about our program.</h1>
+            </div>
+            <div class="col-md-6 ml-auto align-self-end">
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<section class="cd-faq js-cd-faq container max-width-md margin-top-lg margin-bottom-lg" style="margin-left: 0px;">
+    <div class="cd-faq__items" >
+      <ul id="basics" class="cd-faq__group" style="width: 150%; ">
+        <li class="cd-faq__item" style="background: #fffde6;">
+          <a class="cd-faq__trigger" href="#0" font-color="blue"><span>What is Brightkid@Home program?</span></a>
+          <div class="cd-faq__content">
+            <div class="text-component">
+              <p style="font-size: 135%;">The Brightkid@home program is an early childhood education program ( Play Group, Nursery, LKG and UKG) which can be conducted at the safety and comfort of home. This program is offered by Bright Kid Montessori House who has over a decade of Preschool operation and teaching experience and winner of many awards for it's innovative Teaching, effective deployment of technology and digital content creation  in early childhood education. Preschool education at home provides unique learning Kits, materials,  digital lessons and supplemental learning  App along with a world class Parent Support program and Toolkit for Parents to guide their child.  The objective of this program is to enable and support parents to provide the best preschool education for their child at home.</p>
+            </div>
+          </div> <!-- cd-faq__content -->
+        </li>
+
+        <li class="cd-faq__item" style="background: #e6fffa;">
+          <a class="cd-faq__trigger" href="#0"><span>Will teachers come to home to teach the child ? </span></a>
+          <div class="cd-faq__content">
+            <div class="text-component">
+              <p style="font-size: 135%;">In the Brightkid@home program teachers will not be coming physically to your residence, however there will be live teacher interactions and mentoring for parents for each student by professional and trained teachers  of Bright Kid Montessori House using an Innovative ticketing system which is just one click away.The program utilises the best virtual teaching resources  ( which we call it 'Anytime, Anywhere Teacher') in the most optimum and convenient way for parents.</p>
+            </div>
+          </div> <!-- cd-faq__content -->
+        </li>
+
+        <li class="cd-faq__item" style="background: #fff5ff;">
+          <a class="cd-faq__trigger" href="#0"><span>What is the duration of the program?</span></a>
+          <div class="cd-faq__content">
+            <div class="text-component">
+              <p style="font-size: 135%;">Durations of every level of the program ( Play Group, Nursery, LKG & UKG ) will be of one year just like the schooling system and annual academic sessions of your state.</p>
+            </div>
+          </div> <!-- cd-faq__content -->
+        </li>
+
+        <li class="cd-faq__item" style="background: #fff5f5;">
+          <a class="cd-faq__trigger" href="#0"><span>Do Parents need teaching experience ?</span></a>
+          <div class="cd-faq__content">
+            <div class="text-component">
+              <p style="font-size: 135%;">Parents need not have any teaching experience, their own basic academics familiarisation is sufficient. The program is designed and curated in such a way where children can learn and grow  using self intuitive learning kits and Montessori Materials. However, parents are required to provide necessary guidance, attention, hand holding and encouragement to their child themselves during this vital learning and development stages of their child which will not only provide priceless experience to parents but also foster a strong family bond and Bright Kid Montessori House will always be by the side of parent to accomplish proper development of their child.</p>
+            </div>
+          </div> <!-- cd-faq__content -->
+        </li>
+
+        <li class="cd-faq__item" style="background: #fffde6;">
+          <a class="cd-faq__trigger" href="#0"><span>How much daily time is required from parents for this course for their child?</span></a>
+          <div class="cd-faq__content">
+            <div class="text-component">
+              <p style="font-size: 135%;">As the parents start participating in this program, they will soon find that the parent has more role as observer and supervisor than a role of performing  any kind of intense direct teaching. Children are natural learners from the environment and resources provided to them. Typically 6-8 hours of weekly engagement distributed over the week at the convenient timings for parents and child is sufficient. Children love order thus making a daily routine of engagement will lead to greater developmental accomplishment of your child.</p>
+            </div>
+          </div> <!-- cd-faq__content -->
+        </li>
+
+        <li class="cd-faq__item" style="background: #e6fffa;">
+          <a class="cd-faq__trigger" href="#0"><span>Who will give parents the curriculum/ study or activity plan and timetable ?</span></a>
+          <div class="cd-faq__content">
+            <div class="text-component">
+              <p style="font-size: 135%;">In Brightkid@home curriculum and study plan are provided by Bright Kid Montessori House and it varies between each level. Upon signup and completing your profile we will curate a timetable for your child based on his/her enrollment level, habits and of course the parent’s daily routine.</p>
+            </div>
+          </div> <!-- cd-faq__content -->
+        </li>
+
+        <li class="cd-faq__item" style="background: #fff5ff;">
+          <a class="cd-faq__trigger" href="#0"><span>Will my child get a Marks Card and Certificate ?</span></a>
+          <div class="cd-faq__content">
+            <div class="text-component">
+              <p style="font-size: 135%;">Yes, on completion of the course and upon meeting the requirements of the course, your child will get all necessary credentials from Bright Kid Montessori House.</p>
+            </div>
+          </div> <!-- cd-faq__content -->
+        </li>
+
+        <li class="cd-faq__item" style="background: #fff5f5;">
+          <a class="cd-faq__trigger" href="#0"><span>Is this program based on CBSE/ ICSE or any other Board?</span></a>
+          <div class="cd-faq__content">
+            <div class="text-component">
+              <p style="font-size: 135%;">Certainly, the Preschool program is curated matching the requirements for early Childhood Learning mentioned by various boards such as CBSE / ICSE or any leading board/ education system.</p>
+            </div>
+          </div> <!-- cd-faq__content -->
+        </li>
+
+        <li class="cd-faq__item" style="background: #fffde6;">
+          <a class="cd-faq__trigger" href="#0"><span>Can the child learn or study alone, independently ?</span></a>
+          <div class="cd-faq__content">
+            <div class="text-component">
+              <p style="font-size: 135%;">All lessons have auditory & visual cues to help children progress through the lessons and the site independently or with minimum direct parental involvement (depending on age and ability of the child).  However, that is not possible 100% of the time, especially in the beginning.  Thus features are made to suit for use by both parents and children together.</p>
+            </div>
+          </div> <!-- cd-faq__content -->
+        </li>
+
+        <li class="cd-faq__item" style="background: #e6fffa;">
+          <a class="cd-faq__trigger" href="#0"><span> How much will be the screen time for my child in this course ?</span></a>
+          <div class="cd-faq__content">
+            <div class="text-component">
+              <p style="font-size: 135%;">According to the American Academy of Pediatrics, "For children ages 2 to 5 years, limit screen use to 1 hour per day of high-quality programs". We believe parents should co-view digital contents with children to help them understand what they are seeing and apply it to the world around them. Thoughtfully, we have made the program in such a way that there are no continuous screen time for children and average time for each content or concept  is around  5-6 mins. only. A child may co-view with you about 2-3 concepts per day  at Nursery level and 5-6 concepts at KG level.  All these will translate co-viewing screen time  together with parent to the extent 10-20 mins. per day for Play Group / Nursery and around 20- 30 mins per day for LKG & UKG.  At Brightkid@home we provide activities and toolkits that promote a blend between online and offline  learning.</p>
+            </div>
+          </div> <!-- cd-faq__content -->
+        </li>
+
+        <li class="cd-faq__item" style="background: #fff5ff;">
+          <a class="cd-faq__trigger" href="#0"><span>How would this program develop the social skills for my child ?</span></a>
+          <div class="cd-faq__content">
+            <div class="text-component">
+              <p style="font-size: 135%;">It’s easy to monitor your child’s physical development as he or she grows taller, bigger, and stronger. However it is hard to understand social development of a child and to do so we at Brightkid@home provide social tasks and a wishlist for parents to see whether their child has accomplished milestones of the social wishlist. There few milestones for a child’s social skills development and we would provide all guides to prepare and help your child to acquire social skills as per child's age.</p>
+            </div>
+          </div> <!-- cd-faq__content -->
+        </li>
+
+        <li class="cd-faq__item" style="background: #fff5f5;">
+          <a class="cd-faq__trigger" href="#0"><span>How would this program develop communication skills for my child ?</span></a>
+          <div class="cd-faq__content">
+            <div class="text-component">
+              <p style="font-size: 135%;">Bright Kid Montessori House curriculum lay much needed emphasis to ensure that Bright Kids are able and ready communicators. They communicate primarily through language, but they also rely on gestures, facial expressions, and behaviors. Our program highlights all these  language and communication milestones for preschool children. These skills are put to practice and test through various hands on  activities and digital contents include many 'do with actions' which will help parent to inculcate  development of communication skills for a child.</p>
+            </div>
+          </div> <!-- cd-faq__content -->
+        </li>
+        <li class="cd-faq__item" style="background: #fffde6;">
+          <a class="cd-faq__trigger" href="#0"><span>Will this program help my child to get admission in regular school later ?</span></a>
+          <div class="cd-faq__content">
+            <div class="text-component">
+              <p style="font-size: 135%;">Brightkid@Home program derives its strength from the proven, time tested and much appreciated early Childhood Education program of Bright Kid Montessori House  on one hand and propels  the deep engagement from parents with their love, attention and care on the other hand. We strongly believe this combination and collaboration will not only make children future ready for any school but also for the life ahead.</p>
+            </div>
+          </div> <!-- cd-faq__content -->
+        </li>
+
+      </ul>
+ <!-- cd-faq__group -->
+
+
+    <a href="#0" class="cd-faq__close-panel text-replace">Close</a>
+
+    <div class="cd-faq__overlay" aria-hidden="true"></div>
+    </section> <!-- cd-faq -->
+    <script src="assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+    <script src="assets/js/main.js"></script>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/aos.js"></script>
+
+    <script src="js/main.js"></script>
+
+  </body>
+
+</html>

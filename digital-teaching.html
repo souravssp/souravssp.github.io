@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Bright Kid @Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700|Indie+Flower" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+  	<!-- Custom-Files -->
+	<!-- Bootstrap-Core-Css -->
+	<link rel="stylesheet" href="css_bright/css/bootstrap.css">
+	<!-- Style-Css -->
+	<link rel="stylesheet" href="css_bright/css/style.css" type="text/css" media="all" />
+	<!-- Font-Awesome-Icons-Css -->
+	<link rel="stylesheet" href="css_bright/css/fontawesome-all.css">
+	<!-- //Custom-Files -->
+	<!-- Web-Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+	 rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+	<!-- //Web-Fonts -->
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Google Fonts
+        ============================================= -->
+        <link href='http://fonts.googleapis.com/css?family=Dosis:400,500,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+        <!-- Stylesheets
+        ============================================= -->
+        <link rel="stylesheet" href="css_bright/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="css_bright/plugin.css" type="text/css" />
+        <link rel="stylesheet" href="css_bright/style.css" type="text/css" />
+        <link rel="stylesheet" href="css_bright/responsive.css" type="text/css" />
+
+        <!-- External Styles
+        ============================================= -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+        <!-- JavaScripts
+        ============================================= -->
+        <script type="text/javascript" src="js_bright/jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <style>
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+    .nav-item {
+      width: 50%;
+    }
+    .nav-tabs-link {
+      width: 100%;
+      display: inline-block;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 22px;
+      border-top-right-radius: 20px !important;
+      border-top-left-radius: 20px !important;
+      border-radius: 0;
+      border-width: 6px !important;
+      border-style: solid !important;
+      margin: 30px 0px 0px 0px;
+      background: #2fa5b2;
+      color: #fff !important;
+      border-color: #2596a2 !important;
+    }
+
+    .the-tab {
+      padding: 40px;
+    font-size: 20px;
+    background: #dc3545 !important;
+    color: #fff !important;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 6px solid #b32230 !important;
+    border-top-color: #dc3545 !important;
+    }
+
+    .active.nav-tabs-link {
+      background-color: #dc3545 !important;
+    border-color: #b32230 !important;
+    border-bottom-color: #dc3545 !important;
+    }
+#nav {
+    position:relative;
+    width:1000px;
+    margin-top:50px;
+    padding:10px;
+	height:60px;
+	margin-left:250px;
+}
+ 
+ul#navigation {
+    margin:0px auto;
+    position:relative;
+    float:left;
+    border-left:0px solid #fff;
+    border-right:1px solid #fff;
+}
+ 
+ul#navigation li {
+    display:inline;
+    font-size:12px;
+    font-weight:bold;
+    margin:0;
+    padding:0;
+    float:left;
+    position:relative;
+    border-top:1px solid #c4dbe7;
+    border-bottom:2px solid #c4dbe7;
+}
+ 
+ul#navigation li a {
+    padding:10px 25px;
+    color:#616161;
+    text-shadow:1px 1px 0px #fff;
+    text-decoration:none;
+    display:inline-block;
+    border-right:1px solid #fff;
+    border-left:1px solid #C2C2C2;
+    border-top:1px solid #fff;
+    background: #f5f5f5;
+ 
+    -webkit-transition:color 0.2s linear, background 0.2s linear;
+    -moz-transition:color 0.2s linear, background 0.2s linear;
+    -o-transition:color 0.2s linear, background 0.2s linear;
+    transition:color 0.2s linear, background 0.2s linear;
+}
+ 
+ul#navigation li a:hover {
+    background:#e3f0fc;
+    color:#282828;
+}
+ 
+ul#navigation li a.first {
+    border-left: 0 none;
+}
+ 
+ul#navigation li a.last {
+    border-right: 0 none;
+}
+ 
+ul#navigation li:hover > a {
+    background:#fff;
+}
+/* Drop-Down Navigation */
+ul#navigation li:hover > ul
+{
+/*these 2 styles are very important,
+being the ones which make the drop-down to appear on hover */
+    visibility:visible;
+    opacity:1;
+}
+ 
+ul#navigation ul, ul#navigation ul li ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+/*the next 2 styles are very important,
+being the ones which make the drop-down to stay hidden */
+    visibility:hidden;
+    opacity:0;
+    position: absolute;
+    z-index: 99999;
+    width:180px;
+    background:#e3f0fc;
+    box-shadow:1px 1px 3px #ccc;
+/* css3 transitions for smooth hover effect */
+    -webkit-transition:opacity 0.2s linear, visibility 0.2s linear;
+    -moz-transition:opacity 0.2s linear, visibility 0.2s linear;
+    -o-transition:opacity 0.2s linear, visibility 0.2s linear;
+    transition:opacity 0.2s linear, visibility 0.2s linear;
+}
+ 
+ul#navigation ul {
+    top: 43px;
+    left: 1px;
+}
+ 
+ul#navigation ul li ul {
+    top: 0;
+    left: 181px; /* strong related to width:180px; from above */
+}
+ 
+ul#navigation ul li {
+    clear:both;
+    width:100%;
+    border:0 none;
+    border-bottom:1px solid #c9c9c9;
+}
+ 
+ul#navigation ul li a {
+    background:none;
+    padding:7px 15px;
+    color:#616161;
+    text-shadow:1px 1px 0px #fff;
+    text-decoration:none;
+    display:inline-block;
+    border:0 none;
+    float:left;
+    clear:both;
+    width:150px;
+}
+    div.scrollmenu {
+      overflow: auto;
+      white-space: nowrap;
+    }
+
+
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+  <div class="site-wrap" id="home-section">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+
+    <header class="site-navbar site-navbar-target" role="banner">
+
+      <div class="container mb-3">
+        <div class="d-flex align-items-center">
+          <div class="site-logo mr-auto">
+            <img src= "images\bkhl.png" alt="bkhl" width="240" height="120">
+
+          </div>
+          <div class="site-quick-contact d-none d-lg-flex ml-auto ">
+            <div class="d-flex site-info align-items-center mr-5">
+              <img src= "images\bkmhl.png" alt="bkhl" width="240" height="120" align="right">
+            </div>
+          </div>
+        </div>
+      </div>
+<nav id="nav">
+    <ul id="navigation">
+        <li><a href="home.html" class="first">Home</a></li>
+        <li><a href="curriculum.html">Curriculum & Level </a>
+        </li>
+        <li><a href="#">Learning Edge &raquo;</a>
+            <ul>
+                <li><a href="smart_learning_edge.html">Smart Learning Edge</a></li>
+                <li><a href="enchancing_social_skills.html">Enhancing scoial skills</a></li>
+                <li><a href="montessori_learning_edge.html">Montessori Learning Edge</a></li>
+				<li><a href="Mybrightbook.html">My Bright Books</a></li>
+            </ul>
+        </li>
+		<li><a href="https://brightkidmont.viewpage.co/bkhome">Support & Enquire</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="#">Enrollment</a></li>
+        <li><a href="#" class="last">Contact Us</a></li>
+    </ul>
+</nav>
+
+
+
+    </header>
+
+<div class="ftco-blocks-cover-1">
+
+        <div class="site-section-cover overlay" data-stellar-background-ratio="0.5" style="background-image: url('images/hero_1.jpg')">
+        <div class="container">
+          <div class="row align-items-center " style="margin-top:250px;">
+            <div class="col-md-10 mt-4 pt-4">
+              <h3 class="mb-3 font-weight-bold text-teal">Welcome to Bright Kid @Home</h3>
+
+
+            </div>
+            <div class="col-md-6 ml-auto align-self-end">
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+
+	<!-- history -->
+	<div class="about-page py-5">
+		<div class="container py-xl-5 py-lg-3">
+			<h4 class="title text-capitalize font-weight-light text-center mb-5" style="color:#3a3db7;font-family:montserrat">DIGITAL TEACHING PACKAGE :
+				<span class="font-weight-bold"> 4 VERTICALS</span>
+			</h4>
+			<div class="row about-head-wthree">
+				<div class="col-lg-12 right-abw3ls mt-lg-0 mt-sm-5 mt-4">
+					<h5 class="font-italic border-bottom text-center font-weight-bold pb-3 mb-4" style="color:#ff5e00;font-family: montserrat;">GAIN A COMPETITIVE EDGE AND BE PART OF THE CURRENT TECHNOLOGY EMPOWERED ECOSYSTEM WITH OUR LEADING DIGITAL TECHNOLOGY ADVANTAGE IN EARLY CHILDHOOD LEARNING.</h5>
+					<p style="color:#000080;font-family: montserrat;">As technology in digital learning is now addressing the needs of the new-age learners and transforming every industry, Bright Edge Edusystems Pvt. Ltd. has successfully pioneered in planting digital technologies for creating a highly-effective and an enriching learning experience for children. </p>
+					<p class="mt-3" style="color:#000080;font-family: montserrat;">We have developed 4 verticals of providing digital technologies that supplement resource-based learning in classrooms and also at home. We have developed learning content in a manner that perfectly fits the way children learn i.e. – visually appealing with a real teacher.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //history -->
+
+	
+				
+				<div class="col-md-12 col-12 blog-gd-w3ls last mt-md-0 mt-sm-5 mt-4">
+					<img src="images/New/Package.png" alt=" " class="img-fluid" style="display:block;margin: 0 auto;" >
+				</div>
+			
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- course-->
+	<div class="course-w3ls py-5">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="row cource-list-agile pt-4">
+				<div class="col-lg-7 agile-course-main">
+					<div class="w3ls-cource-first">
+						<img src="images/1.png" alt="" class="img-fluid img-poiscour mx-auto d-block mt-2">
+						<div class="px-md-5 px-4  pb-md-5 pb-4">
+							<h3 style="color:#ff5e00;font-family: montserrat;">SMART BOOKS</h3>
+							<ul class="list-unstyled">
+								<li class="my-3" style="color:#000080;">
+									<i class="fas fa-clock mr-3"></i>A code for each concept! each rhyme! Each amazing fact! </li>
+								<li class="my-3" style="color:#000080;">
+									<i class="fas fa-clock mr-3"></i>You just have to open a page of our books, and all the images, alphabets, words and many more come alive in a few seconds once scanned through mobile camera. Just imagine, that a child can have a teacher anytime, anywhere!</li>
+								<li class="my-3" style="color:#000080;">
+									<i class="fas fa-clock mr-3"></i>Separate SMART book sets are available for each level- Playgroup, Nursery, LKG and UKG.</li>
+									<li class="my-3" style="color:#000080;">
+									<i class="fas fa-clock mr-3"></i>Instructions are delegated in a complete, appropriate and structured manner leveraging the teachers knowledge and years of teaching experience.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5 agile-course-main-2 mt-4">
+					<iframe id="yvideo" src="https://www.youtube.com/embed/gKGBE9H4c0U?rel=0" width="100%" height="250"
+        allowfullscreen="allowfullscreen"
+        mozallowfullscreen="mozallowfullscreen" 
+        msallowfullscreen="msallowfullscreen" 
+        oallowfullscreen="oallowfullscreen" 
+        webkitallowfullscreen="webkitallowfullscreen"> </iframe>
+				</div>
+			</div>	
+	</div>
+	
+	
+	
+	<div class="container py-xl-5 py-lg-3">
+			<div class="row cource-list-agile pt-4">
+				<div class="col-lg-7 agile-course-main">
+					<div class="w3ls-cource-first">
+						<img src="images/1.png" alt="" class="img-fluid img-poiscour mx-auto d-block mt-2">
+						<div class="px-md-5 px-4  pb-md-5 pb-4">
+							<h3 style="color:#ff5e00;font-family: montserrat;">SMART TEACHER</h3>
+							<h6 class="mt-3 mb-4 pl-lg-4" style="color: orangered;font-weight: bold;">NEVER AGAIN FEEL THE SCARCITY OF A COMPETENT TEACHER IN YOUR CLASS !</h6>
+							<ul class="list-unstyled">
+								<li class="my-3" style="color:#000080;">
+									<i class="fas fa-clock mr-3"></i>There are 4 modules for each level i.e. Playgroup, Nursery, LKG and UKG. Each module containing 150+ smart class video topics.  </li>
+								<li class="my-3" style="color:#000080;">
+									<i class="fas fa-clock mr-3"></i>The Smart Teacher is developed to assist and supplement the classroom teacher enabling her to inspire and lead effectively.</li>
+								<li class="my-3" style="color:#000080;">
+									<i class="fas fa-clock mr-3"></i>Lessons are planned by the Smart Teacher, from introduction of the concept, to developing the children’s curiosity towards the concept and finally to organizing and delivering the teaching instructions.</li>
+									<li class="my-3" style="color:#000080;">
+									<i class="fas fa-clock mr-3"></i>The smart teacher will provide all the engaging visual resources as well as provide an effective and an interesting introduction to the topic suitable to the age group.</li>
+							<li class="my-3" style="color:#000080;">
+									<i class="fas fa-clock mr-3"></i>Syllabus based delivery.</li>
+							
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5 agile-course-main-2 mt-4">
+					<img src="images/New/smart_teacher.jpg" alt="" class="img-fluid" style="height:70%;width:100%;">
+				</div>
+				
+			</div>	
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="container py-xl-5 py-lg-3">
+			<div class="row cource-list-agile pt-4">
+				<div class="col-lg-7 agile-course-main">
+					<div class="w3ls-cource-first">
+						<img src="images/1.png" alt="" class="img-fluid img-poiscour mx-auto d-block mt-2">
+						<div class="px-md-5 px-4  pb-md-5 pb-4">
+							<h3 style="color:#ff5e00;font-family: montserrat;">INTERACTIVE SMART CLASS ACTIVITY</h3>
+							<ul class="list-unstyled">
+								<li class="my-3" style="color:#000080;">
+									<i class="fas fa-clock mr-3"></i>Over 150+ Interactive Smart Class Activities for teachers to use in the classroom. </li>
+								<li class="my-3" style="color:#000080;">
+									<i class="fas fa-clock mr-3"></i>Separate Interactive Smart Class Activities for each level.</li>
+								<li class="my-3" style="color:#000080;">
+									<i class="fas fa-clock mr-3"></i>An engaging, meaningful learning experience.</li>
+									<li class="my-3" style="color:#000080;">
+									<i class="fas fa-clock mr-3"></i>Children will be able to choose their answers on a one-by-one basis or in groups! Once children have chosen their answers, they will get a response immediately !</li>
+							<li class="my-3" style="color:#000080;">
+									<i class="fas fa-clock mr-3"></i>This is exciting because these interactive smart class activities will develop the child in the following ways:
+									<ul>
+									<li class="my-3"> i) Prepare the child for tests and other assessments as they progress to 1st, 2nd grade and so on.</li>
+									<li> ii) Prepare the child’s mind to take up challenges and improve logical ability.</li>
+									</ul>
+									
+									</li>
+							
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5 agile-course-main-2 mt-4">
+					<img src="images/New/intractive_smart.jpg" alt="" class="img-fluid" style="height:70%;width:100%;">
+				</div>
+				
+			</div>	
+	</div>
+	
+	
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- mission -->
+	<div class="about-page-2 py-5">
+	<h4 class="font-italic border-bottom text-center font-weight-bold pb-3 mb-4" style="color: #b71540;font-family: montserrat;">MULTIPLE INTELLIGENCE MOBILE APP FOR KIDS</h4>
+		<div class="container-fluid py-xl-5 py-lg-3">
+			<div class="row about-head-wthree-2">
+				<div class="col-lg-4 left-abw3ls text-lg-left text-center">
+					<img src="images/New/app1.jpg" alt="" class="img-fluid">
+				</div>
+				<div class="col-lg-4 right-abw3ls my-lg-0 my-sm-5 my-4">
+					<p style="color:blue;">An Multiple Intelligence App for all the children in your preschool center!​ Engage your preschool children at home!  </p>
+					
+					<p class="mt-3" style="color:#b71540;">What is the objective of the App?</p>
+					<p class="mt-3" style="color:#000080;">The objective of the App is to extend, strengthen and heighten the service that we offer to our affiliates so that they can provide to the beloved children enrolled in their preschool by serving and contributing to a child’s overall personality and intelligence development in the comfort of their homes.</p>
+					
+					
+					<p class="mt-3" style="color:red;">What is inside the App?</p>
+<p class="mt-3" style="color:#000080;">The app will have over 100 activities for the child to do based on the 4 intelligence, these are:</p>
+<p class="mt-3" style="color:#000080;">1. MY BRIGHT BRAIN</p>
+<p class="mt-3" style="color:#000080;">2. BE BRIGHT</p>
+<p class="mt-3" style="color:#000080;">3. MY ANYTIME TEACHER</p>
+<p class="mt-3" style="color:#000080;">4. SOCIAL SMART</p>
+					
+					
+					
+				</div>
+				<div class="col-lg-4 left-abw3ls text-lg-left text-center">
+					<img src="images/New/app2.jpg" alt="" class="img-fluid">
+				</div>
+					
+			</div>
+		</div>	
+	</div>
+	<!-- //mission -->
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="container py-xl-5 py-lg-3">
+			<div class="row cource-list-agile pt-4">
+				<div class="col-lg-12 agile-course-main">
+					<div class="w3ls-cource-first">
+						<img src="images/1.png" alt="" class="img-fluid img-poiscour mx-auto d-block mt-2">
+						<div class="px-md-5 px-4  pb-md-5 pb-4">
+							<h4 style="color:blue;text-align:center;">Children of the age group 2-6 have the most absorbent minds and they are very quick learners as compared to adults.</h4>
+							
+							
+							<ul class="list-unstyled">
+								<li class="my-3" style="color:#000080;">
+									<i class="fas mr-3"></i>Until the last decade, we and our ancestors have been restricted to learning from the resources in our surroundings or from books which has in turn restricted us from enabling our fullest potential at every stage of our lives due to lack of exposure and resources.</li>
+								<li class="my-3" style="color:#000080;text-align:center;">
+									<i class="fas mr-3"></i>Today, times have changed… And this must be taken advantage of…</li>
+								<li class="my-3" style="color:#000080;text-align:center;">
+									<i class="fas mr-3"></i>Today, there are plenty resources just a tap of a finger away from us.</li>
+								
+							
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+			</div>	
+	</div>
+	
+	
+
+	<!-- Js files -->
+	<!-- JavaScript -->
+	<script src="css_bright/js/jquery-2.2.3.min.js"></script>
+	<!-- Default-JavaScript-File -->
+	<script src="css_bright/js/bootstrap.js"></script>
+	<!-- Necessary-JavaScript-File-For-Bootstrap -->
+
+	<!-- numscroller-js-file -->
+	<script src="css_bright/js/numscroller-1.0.js"></script>
+	<!-- //numscroller-js-file -->
+
+	<!-- smooth scrolling -->
+	<script src="css_bright/js/SmoothScroll.min.js"></script>
+	<!-- //smooth scrolling -->
+
+	<!-- move-top -->
+	<script src="css_bright/js/move-top.js"></script>
+	<!-- easing -->
+	<script src="css_bright/js/easing.js"></script>
+	<!--  necessary snippets for few javascript files -->
+	<script src="css_bright/js/edulearn.js"></script>
+
+	<!-- //Js files -->
+				
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/aos.js"></script>
+
+    <script src="js/main.js"></script>
+
+  </body>
+
+</html>
+n
